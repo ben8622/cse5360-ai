@@ -1,6 +1,6 @@
 import sys
-from Node import Node
-from utilities import uninformed_search, informed_search
+from classes.Node import Node
+from algorithm import search, informed_search
 
 # algorithm args
 cities: dict[str, Node] = {}
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     # initialize answer
     ans: Node = None
 
-    # if heuristic provided, build it, perform informed search
+    # if heuristic provided, build it
     if(len(sys.argv) == 5):
         with open(sys.argv[4]) as f:
             for line in f.readlines():
@@ -51,9 +51,8 @@ if __name__ == "__main__":
 
         ans = informed_search(cities, fringe, visited, goal)
     
-    # else, perform uninformed search
-    else:
-        ans = uninformed_search(cities, fringe, visited, goal)
+    # perform the search
+    ans = search(cities, fringe, visited, goal)
 
     while(ans.prev != None):
         print(ans.name)

@@ -1,8 +1,8 @@
-from Node import Node
+from assignment1.classes.Node import Node
 import copy
 
 
-def uninformed_search(cities: dict[str, Node], fringe: list[Node], visited: dict[str, bool], goal: str):
+def search(cities: dict[str, Node], fringe: list[Node], visited: dict[str, bool], goal: str):
     while (len(fringe) > 0):
         node = fringe.pop()
 
@@ -38,7 +38,7 @@ def expand_node(node: Node, cities: dict[str, Node], fringe: list[Node]) -> list
         end_city_node: Node = copy.deepcopy(cities[end_city])
 
         # fill in relevant information
-        end_city_node.cost = path_cost + node.cost
+        end_city_node.cost = path_cost + node.cost + end_city_node.heuristic
         end_city_node.prev = node
 
         # insert into fringe (in order)
