@@ -29,5 +29,9 @@ Hannover to Kassel, 165.0 km
 ## How to run:
 **Developed on:**
 - Windows 10
-- VS Code 
 - python 3.10.7
+
+1. Download the [repo from github](https://github.com/ben8622/cse5360-ai)
+2. cd into the ./assignment1 directory
+3. For **informed search** run `python .\main.py example_inputs/input1.txt Bremen Kassel example_inputs/h_kassel.txt`  
+For **uniformed search** run `python .\main.py example_inputs/input1.txt Bremen Kassel`
