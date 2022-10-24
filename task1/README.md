@@ -1,6 +1,13 @@
-Benjamin Knight  
-1001788622
-CSE 5360-004 T/Th
+Benjamin Knight 1001788622  
+python 3.10.7 _I have not attempted to run on Omega_  
+
+Code starts from the main.py entry point where it:
+1. Extracts file contents to build the nodes
+2. Grabs the starting node
+3. Performs Uniform Cost Search (with heuristics included) until the goal node is found  
+
+Can run the code by changing into the ./task1/ directory and running `python ./main.py example_inputs/input1.txt Bremen Kassel example_inputs/h_kassel.txt` 
+this is assuming you have python3.10.7 as your default interpreter
 
 
 # [Assignment 1](https://crystal.uta.edu/~gopikrishnav/classes/2022/fall/4308_5360/assmts/assmt1.html)
