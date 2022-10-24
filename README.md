@@ -1,2 +1,3 @@
-# cse5360-ai
-Repo for CSE-5360 assignments at UTA
+# Task 1 run instructions are located in task1/README.md
+
+# !!! TASK 2 IS NOT COMPLETED !!!
